@@ -8,7 +8,6 @@
 */
 int main(void)
 {
-	int n;
 
 	char upper_case;
 	char lower_case;
