@@ -6,14 +6,14 @@
 */
 int main(void)
 {
-	int i1, i2;
+	int num1, num2;
 	{
-	for (i1 = 0; i2 < 9; i1++)
+	for (num1 = 0; num1 < 9; num++)
 	{
-	for (i2 = i1 + 1; i2 < 10; i2++)
-	putchar((i1 % 10) + '0');
-	putchar((i2 % 10) + '0');
-	if (i1 == 8 && i2 == 9)
+	for (num2 = num1 + 1; num2 < 10; num2++)
+	putchar((num1 % 10) + '0');
+	putchar((num2 % 10) + '0');
+	if (num1 == 8 && num2 == 9)
 	continue;
 	putchar(',');
 	putchar(' ');
