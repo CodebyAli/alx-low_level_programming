@@ -1,7 +1,7 @@
 #include "main.h"
 /**
-* main - main block 
-* Description: putchar in nested loop
+* main - Entry point 
+*
 * Return: 0
 */
 int main(void)
