@@ -1,5 +1,5 @@
 #include "main.h"
-#nclude <stdio.h>
+#include <stdio.h>
 
 /**
  * _abs - value absolute
