@@ -8,8 +8,6 @@
  * Return: the absolute value of the integer.
  */
 
-int r
-
 _abs(int n)
 
 {
