@@ -1,8 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - list all the natural numbers bellow 1024 
- * 
+ * main - list all the natural numbers bellow 1024
  *
  * Return: Always 0.
  */
