@@ -1,5 +1,4 @@
 #include "main.h"
-
 /**
  * _supper - checkersupper code.
  * @c: print int
