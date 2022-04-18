@@ -2,7 +2,7 @@
 /**
  * _supper - checkersupper code.
  * @c: print int
- * Return: 1 or 0.
+ * Return: Always 0.
  */
 
 int _isupper(int c);
