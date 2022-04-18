@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * _supper - checkersupper code.
+ * _isupper - checkersupper code.
  * @c: print int
  * Return: Always 0.
  */
