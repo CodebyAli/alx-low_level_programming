@@ -1,7 +1,7 @@
 #include "main.h"
 /**
- * _isupper - checkersupper code.
- * @c: print int
+ * _isupper - check the code
+ *@c: print int
  * Return: Always 0.
  */
 
