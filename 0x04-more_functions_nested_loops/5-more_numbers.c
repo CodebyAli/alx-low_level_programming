@@ -7,36 +7,22 @@
 
 void more_numbers(void)
 {
-int i;
-int first_number;
-int second_number;
-int result;
+int i, j, k;
 
-i = 0;
-result = 0;
-while (i < 10)
+for (k = 0; k < 10; k++)
 {
-while (result <= 14)
+for (i 0; i <= 1; i++)
 {
-if (result < 10)
+for (j = 0; j<= 9; j++)
 {
-second_number = result;
-}
-
-else
+if (!(i == 1 && j >= 5))
 {
-first_number = result / 10;
-second_number = result % 10;
-_putchar (first_number + '0');
+if (i)
+_putchar(i + 'k');
+_putchar(k + 'k');
 }
-
-_putchar (second_number + '0');
-
-result++;
 }
-i++;
-result = 0;
-_putchar ('\n');
 }
-
+_putchar('\n');
+}
 }
