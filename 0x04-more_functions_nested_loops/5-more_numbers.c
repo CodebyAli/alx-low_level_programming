@@ -1,4 +1,5 @@
 #include "main.h"
+
 /**
  * more_numbers - print 10 times the numbers
  *
@@ -7,6 +8,7 @@
 
 void more_numbers(void)
 {
+
 int i, j, k;
 
 for (k = 0; k < 10; k++)
