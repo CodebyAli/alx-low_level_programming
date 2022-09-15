@@ -1,47 +1,21 @@
 #!/usr/bin/python3
-
 """A function that defines an island perimeter."""
 
 def island_perimeter(grid):
-    """Determine the perimeter of a grid"""
-
-    height = len(grid)
-    if grid[0]:
-        width = len(grid[0])
-
     perimeter = 0
-
-    for row_i, row in enumerate(grid):  # for each row
-        for col_i, col in enumerate(row):  # checking each unit of row
-
-            if col is 1:  # if index is land
-
-                # check above block
-                if row_i is 0:
+    for row in range(0, len(grid)):
+        for zone in range(0, len(grid[row])):
+            if grid[row][zone] == 1:
+                if zone < len(grid[row]) - 1 and grid[row][zone + 1] == 0:
                     perimeter = perimeter + 1
-                else:
-                    if grid[row_i - 1][col_i] is not 1:
-                        perimeter = perimeter + 1
-
-                # check left block
-                if col_i is 0:
+                if zone > 0 and grid[row][zone - 1] == 0:
                     perimeter = perimeter + 1
-                else:
-                    if grid[row_i][col_i - 1] is not 1:
-                        perimeter = perimeter + 1
-
-                # check right block
-                if col_i is (width - 1):
+                if row > 0 and grid[row - 1][zone] == 0:
                     perimeter = perimeter + 1
-                else:
-                    if grid[row_i][col_i + 1] is not 1:
-                        perimeter = perimeter + 1
-
-                # check below block
-                if row_i is (height - 1):
+                if row < len(grid) - 1 and grid[row + 1][zone] == 0:
                     perimeter = perimeter + 1
-                else:
-                    if grid[row_i + 1][col_i] is not 1:
-                        perimeter = perimeter + 1
-
+                if row == 0 or row == len(grid) - 1:
+                    perimeter = perimeter + 1
+                if zone == 0 or zone == len(grid[row]) - 1:
+                    perimeter = perimeter + 1
     return perimeter
